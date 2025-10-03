@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var prefsManager: PreferencesManager
     private lateinit var notificationHelper: NotificationHelper
     private var allApps = mutableListOf<AppInfo>()
-    private var currentTab = TAB_ALL
+    private var currentTab = TAB_FAVORITES // Iniciar en Favoritos
     
     companion object {
         const val TAB_FAVORITES = 0
@@ -89,13 +89,17 @@ class MainActivity : AppCompatActivity() {
     private fun setupTabs() {
         binding.tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab?) {
-                currentTab = tab?.position ?: TAB_ALL
+                currentTab = tab?.position ?: TAB_FAVORITES
                 filterAndDisplayApps()
             }
             
             override fun onTabUnselected(tab: TabLayout.Tab?) {}
             override fun onTabReselected(tab: TabLayout.Tab?) {}
         })
+        
+        // El TabLayout ya inicia en posición 0 (Favoritas) por defecto
+        // Forzar el filtrado inicial
+        filterAndDisplayApps()
     }
     
     private fun checkNotificationPermission() {
