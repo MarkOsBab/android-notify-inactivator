@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notify Inactivator</string>
+    <string name="search_apps">Buscar aplicaciones...</string>
+    <string name="loading_apps">Cargando aplicaciones...</string>
+    <string name="total_apps">Total de apps: %1$d</string>
+    <string name="apps_found">Apps encontradas: %1$d</string>
+    <string name="app_icon">Icono de la aplicación</string>
+    <string name="search_icon">Icono de búsqueda</string>
+    <string name="toggle_notifications">Activar/desactivar notificaciones</string>
+    <string name="toggle_favorite">Marcar/desmarcar como favorito</string>
+    <string name="favorites">Favoritas</string>
+    <string name="all_apps">Todas</string>
+    <string name="no_favorites">No hay apps favoritas. Toca la estrella para marcar apps como favoritas.</string>
+    <string name="permission_required">Permiso Requerido</string>
+    <string name="permission_message">Esta aplicación necesita acceso para gestionar las notificaciones de otras aplicaciones.</string>
+    <string name="configure">Configurar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="enable_notifications">Por favor, activa las notificaciones manualmente</string>
+    <string name="disable_notifications">Por favor, desactiva las notificaciones manualmente</string>
+    <string name="error_opening_settings">Error al abrir configuración</string>
+</resources>
